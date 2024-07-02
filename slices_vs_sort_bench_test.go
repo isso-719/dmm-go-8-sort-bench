@@ -21,8 +21,3 @@ func BenchmarkSortPkg(b *testing.B) {
 		sort.Sort(sort.IntSlice(slice))
 	}
 }
-
-func tmp() {
-	slice := []int{3, 2, 1}
-	sort.Slice(slice, func(i, j int) bool { return slice[i] < slice[j] })
-}
